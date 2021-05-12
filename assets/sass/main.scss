@@ -1,0 +1,140 @@
+@import "lib/vars";
+@import "lib/mixins";
+@import "lib/reboot";
+@import "lib/fontawesome/font-awesome";
+@import "lib/fontface";
+@import "lib/keyframes";
+
+$corporateColor: tomato;
+
+* {
+    border: 1px solid $corporateColor;
+}
+
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    line-height: $base * 3;
+    color: $body_color;
+}
+
+.quien {
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .home_holder {
+            max-width: 1080px;
+            h1 {
+                text-align: center;
+                margin-top: $base * 4;
+            }
+            .home_grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: $base * 2 $base * 3;
+                position: relative;
+
+                .character_holder {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    
+
+                    &.active {
+                        /*meter animación tajetas girando
+                        https://www.youtube.com/watch?v=5mrkxGPzyK0
+                        */
+                    }
+
+                    .character {
+                        position: relative;
+                        img {
+                            width: 140px;
+                            height: 140px;
+                        }
+
+                        .name {
+                            margin: 0;
+                            text-align: center;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            color: rgb(0, 0, 0);
+                            background-color: rgba(255, 255, 255, 0.5);
+                            backdrop-filter: blur(3px);
+                            padding: $base * 0.5 0;
+                        }
+                    }
+                }
+            }
+
+            .plantilla {
+                position: absolute;
+                top: 5em;
+                right: 4em;
+            }
+
+            .answer {
+                position: absolute;
+                bottom: 3em;
+                right: 4em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .character_holder {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    overflow: hidden;
+
+                    .character {
+                        position: relative;
+
+                        img {
+                            width: 140px;
+                            height: 140px;
+                            background-color: whitesmoke;
+                        }
+                        .name {
+                            margin: 0;
+                            text-align: center;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            backdrop-filter: blur(3px);
+                            padding: $base * 0.5 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.button {
+    padding: $base;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(22, 61, 45);
+    margin-top: $base;
+}
+.button:hover {
+    background-color: rgb(21, 92, 62);
+    color: white;
+}
+a {
+    color: white;
+}
