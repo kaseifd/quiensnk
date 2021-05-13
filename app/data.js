@@ -167,68 +167,68 @@ const home = [
         
     },
 
-    {
-        img: "assets/img/carguero.png",
-        name: "Titán de Carga",
-        active: true,
+    // {
+    //     img: "assets/img/carguero.png",
+    //     name: "Titán de Carga",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/hembra.png",
-        name: "Titán Hembra",
-        active: true,
+    // {
+    //     img: "assets/img/hembra.png",
+    //     name: "Titán Hembra",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/jean.jpg",
-        name: "Jean Kirschtein",
-        active: true,
+    // {
+    //     img: "assets/img/jean.jpg",
+    //     name: "Jean Kirschtein",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/kenny.png",
-        name: "Kenny Ackerman",
-        active: true,
+    // {
+    //     img: "assets/img/kenny.png",
+    //     name: "Kenny Ackerman",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/martillo.png",
-        name: "Titán Martillo de Guerra",
-        active: true,
+    // {
+    //     img: "assets/img/martillo.png",
+    //     name: "Titán Martillo de Guerra",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/marco.png",
-        name: "Marco Bodt",
-        active: true,
+    // {
+    //     img: "assets/img/marco.png",
+    //     name: "Marco Bodt",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/colosal.jfif",
-        name: "Titán Colosal",
-        active: true,
+    // {
+    //     img: "assets/img/colosal.jfif",
+    //     name: "Titán Colosal",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/mandibulas.png",
-        name: "Titán Mandíbulas",
-        active: true,
+    // {
+    //     img: "assets/img/mandibulas.png",
+    //     name: "Titán Mandíbulas",
+    //     active: true,
         
-    },
+    // },
 
-    {
-        img: "assets/img/levi-4.png",
-        name: "Levi Ackerman",
-        active: true,
+    // {
+    //     img: "assets/img/levi-4.png",
+    //     name: "Levi Ackerman",
+    //     active: true,
         
-    },
+    // },
 
 
 ]

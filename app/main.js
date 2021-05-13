@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    renderGrid();
+    // renderGrid();
     getRandomCharacter()
     renderAnswer()
     newCharacter();
