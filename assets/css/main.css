@@ -3477,10 +3477,6 @@ template {
   font-style: normal;
 }
 
-* {
-  border: 1px solid tomato;
-}
-
 html,
 body {
   font-size: 1rem;
@@ -3536,6 +3532,7 @@ body {
           justify-content: center;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .quien .home .home_holder .home_grid .character_holder.active {
@@ -3544,16 +3541,12 @@ body {
                         */
 }
 
-.quien .home .home_holder .home_grid .character_holder .character {
-  position: relative;
-}
-
-.quien .home .home_holder .home_grid .character_holder .character img {
+.quien .home .home_holder .home_grid .character_holder .front img {
   width: 140px;
   height: 140px;
 }
 
-.quien .home .home_holder .home_grid .character_holder .character .name {
+.quien .home .home_holder .home_grid .character_holder .front .name {
   margin: 0;
   text-align: center;
   position: absolute;
@@ -3565,6 +3558,38 @@ body {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   padding: 0.25rem 0;
+}
+
+.quien .home .home_holder .home_grid .character_holder .back {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+.quien .home .home_holder .home_grid .character_holder .back .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+}
+
+.quien .home .home_holder .home_grid .character_holder .back img {
+  width: 140px;
+  height: 140px;
 }
 
 .quien .home .home_holder .plantilla {

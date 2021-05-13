@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    // renderGrid();
+    renderGrid();
     getRandomCharacter()
     renderAnswer()
     newCharacter();
@@ -15,13 +15,23 @@ const renderGrid = () => {
     let htmlString = ""
 
     for (let i = 0; i < home.length; i++) {
-        const characterHTMLString = `
-            <div class="character_holder">       
-                        <div class="character">
+        const characterHTMLString = `         
+                    <div class="character_holder">
+                        <div class="front">
                             <img src="${home[i].img}" alt="">
                             <p class="name">${home[i].name}</p>
                         </div>
-                    </div>`;
+                        <div class="back">
+                            <div class="bg">${home[i].name}</div>
+                            <img src="${home[i].img}" alt="">                         
+                        </div>
+                    </div>
+                    `
+                    
+                    
+                    
+                    
+                    ;
         htmlString += characterHTMLString;
     }
 

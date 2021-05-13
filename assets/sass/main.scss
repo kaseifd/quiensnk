@@ -7,9 +7,9 @@
 
 $corporateColor: tomato;
 
-* {
-    border: 1px solid $corporateColor;
-}
+// * {
+//     border: 1px solid $corporateColor;
+// }
 
 html,
 body {
@@ -44,7 +44,7 @@ body {
                     justify-content: center;
                     border-radius: 20px;
                     overflow: hidden;
-                    
+                    position: relative;
 
                     &.active {
                         /*meter animación tajetas girando
@@ -52,8 +52,8 @@ body {
                         */
                     }
 
-                    .character {
-                        position: relative;
+                    .front {
+                        
                         img {
                             width: 140px;
                             height: 140px;
@@ -70,6 +70,33 @@ body {
                             background-color: rgba(255, 255, 255, 0.5);
                             backdrop-filter: blur(3px);
                             padding: $base * 0.5 0;
+                        }
+                    }
+
+                    .back {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        top: 0;
+                       
+
+                        .bg {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: rgba(0, 0, 0, 0.8);
+                            z-index: 4;
+                        }
+
+                        img {
+                            width: 140px;
+                            height: 140px;
                         }
                     }
                 }
