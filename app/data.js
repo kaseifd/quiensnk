@@ -2,168 +2,168 @@ const home = [
     {
         img: "assets/img/annie.png",
         name: "Annie Leonhart",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/armin.png",
         name: "Armin Arlert",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/conny.png",
         name: "Connie Springer",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/eren.png",
         name: "Eren Jäger",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/hange.png",
         name: "Hange Zoë",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/levi.jfif",
         name: "Levi Ackerman",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/reiner.png",
         name: "Reiner Braun",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/mikasa.png",
         name: "Mikasa Ackerman",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/sasha.jpg",
         name: "Sasha",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/ymir.png",
         name: "Ymir",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/zeke.png",
         name: "Zeke Jäger",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/historia.jpg",
         name: "Historia Reiss",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/colt.png",
         name: "Colt Grice",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/bert.png",
         name: "Bertholdt Hoover",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/erwin.png",
         name: "Erwin Smith",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/falco.jpg",
         name: "Falco Grice",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/floch.png",
         name: "Floch Forster",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/gabi.jpg",
         name: "Gabi Braun",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/pieck.jpg",
         name: "Pieck",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/pixis.png",
         name: "Dot Pixis",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/porco.png",
         name: "Porco Galliard",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/acorazado.png",
         name: "Titán Acorazado",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/ataque.png",
         name: "Titán de Ataque",
-        active: true,
+        flip: false,
         
     },
 
     {
         img: "assets/img/bestia.png",
         name: "Titán Bestia",
-        active: true,
+        flip: false,
         
     },
 

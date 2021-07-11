@@ -45,61 +45,80 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                     position: relative;
+                    perspective: 500;
+                    user-select: none;
+                    cursor: pointer;
 
-                    &.active {
-                        /*meter animación tajetas girando
-                        https://www.youtube.com/watch?v=5mrkxGPzyK0
-                        */
-                    }
-
-                    .front {
+                    .character {
+                        transform-style: preserve-3d;
+                        transition: 0.7s ease;
                         
-                        img {
-                            width: 140px;
-                            height: 140px;
-                        }
-
-                        .name {
-                            margin: 0;
-                            text-align: center;
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                            left: 0;
-                            color: rgb(0, 0, 0);
-                            background-color: rgba(255, 255, 255, 0.5);
-                            backdrop-filter: blur(3px);
-                            padding: $base * 0.5 0;
-                        }
+                    &.flip {
+                        transform-style: preserve-3d;
+                        transition: 0.7s ease;
+                        transform: rotateY(180deg);
                     }
 
-                    .back {
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        top: 0;
-                       
+                        .front {
+                            
+                            img {
+                                width: 140px;
+                                height: 140px;
+                                border-radius: 20px;
+                                
+                            }
 
-                        .bg {
-                            position: absolute;
-                            top: 0;
-                            bottom: 0;
-                            right: 0;
-                            left: 0;
-                            color: white;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            background-color: rgba(0, 0, 0, 0.8);
-                            z-index: 4;
+                            .name {
+                                margin: 0;
+                                text-align: center;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                color: rgb(0, 0, 0);
+                                background-color: rgba(255, 255, 255, 0.5);
+                                backdrop-filter: blur(3px);
+                                padding: $base * 0.5 0;
+                            }
                         }
 
-                        img {
-                            width: 140px;
-                            height: 140px;
+                        .back {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            top: 0;
+                            transform: rotateY(180deg);
+                            backface-visibility: hidden;
+
+
+                            .bg {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: rgba(0, 0, 0, 0.8);
+                                z-index: 4;
+                                border-radius: 20px;
+                            }
+
+                            img {
+                                width: 140px;
+                                height: 140px;
+                                border-radius: 20px;
+                                // transform: rotateY(180deg);
+
+                            }
                         }
                     }
                 }
+                // .character_holder:hover .character {
+                //     transform: rotateY(180deg);
+                // }
             }
 
             .plantilla {
@@ -165,3 +184,7 @@ body {
 a {
     color: white;
 }
+
+
+
+

@@ -3533,20 +3533,38 @@ body {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  -webkit-perspective: 500;
+          perspective: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 
-.quien .home .home_holder .home_grid .character_holder.active {
-  /*meter animación tajetas girando
-                        https://www.youtube.com/watch?v=5mrkxGPzyK0
-                        */
+.quien .home .home_holder .home_grid .character_holder .character {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
-.quien .home .home_holder .home_grid .character_holder .front img {
+.quien .home .home_holder .home_grid .character_holder .character.flip {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.quien .home .home_holder .home_grid .character_holder .character .front img {
   width: 140px;
   height: 140px;
+  border-radius: 20px;
 }
 
-.quien .home .home_holder .home_grid .character_holder .front .name {
+.quien .home .home_holder .home_grid .character_holder .character .front .name {
   margin: 0;
   text-align: center;
   position: absolute;
@@ -3560,14 +3578,18 @@ body {
   padding: 0.25rem 0;
 }
 
-.quien .home .home_holder .home_grid .character_holder .back {
+.quien .home .home_holder .home_grid .character_holder .character .back {
   position: absolute;
   bottom: 0;
   left: 0;
   top: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.quien .home .home_holder .home_grid .character_holder .back .bg {
+.quien .home .home_holder .home_grid .character_holder .character .back .bg {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3585,11 +3607,13 @@ body {
           justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 4;
+  border-radius: 20px;
 }
 
-.quien .home .home_holder .home_grid .character_holder .back img {
+.quien .home .home_holder .home_grid .character_holder .character .back img {
   width: 140px;
   height: 140px;
+  border-radius: 20px;
 }
 
 .quien .home .home_holder .plantilla {
