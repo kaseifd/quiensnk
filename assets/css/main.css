@@ -3482,7 +3482,12 @@ body {
   font-size: 1rem;
   font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
   line-height: 1.5rem;
-  color: #333;
+  color: white;
+}
+
+.quien {
+  background-color: #141414;
+  height: 110vh;
 }
 
 .quien .home {
@@ -3502,9 +3507,17 @@ body {
   max-width: 1080px;
 }
 
-.quien .home .home_holder h1 {
-  text-align: center;
-  margin-top: 2rem;
+.quien .home .home_holder .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quien .home .home_holder .logo img {
+  width: 400px;
 }
 
 .quien .home .home_holder .home_grid {
@@ -3531,7 +3544,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  overflow: hidden;
   position: relative;
   -webkit-perspective: 500;
           perspective: 500;
@@ -3576,6 +3588,7 @@ body {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   padding: 0.25rem 0;
+  border-radius: 0 0 20px 20px;
 }
 
 .quien .home .home_holder .home_grid .character_holder .character .back {
@@ -3587,6 +3600,7 @@ body {
           transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 .quien .home .home_holder .home_grid .character_holder .character .back .bg {
@@ -3614,6 +3628,8 @@ body {
   width: 140px;
   height: 140px;
   border-radius: 20px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .quien .home .home_holder .plantilla {
@@ -3670,6 +3686,7 @@ body {
 }
 
 .quien .home .home_holder .answer .character_holder .character .name {
+  color: black;
   margin: 0;
   text-align: center;
   position: absolute;
@@ -3686,12 +3703,12 @@ body {
   padding: 0.5rem;
   border-radius: 10px;
   color: white;
-  background-color: #163d2d;
+  background-color: #474747;
   margin-top: 0.5rem;
 }
 
 .button:hover {
-  background-color: #155c3e;
+  background-color: #3b3b3b;
   color: white;
 }
 
